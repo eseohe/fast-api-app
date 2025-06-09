@@ -1,0 +1,11 @@
+image:
+  repository: 172206118494.dkr.ecr.us-east-1.amazonaws.com/fast-api-app
+  pullPolicy: IfNotPresent
+  tag: "latest"  # Replace with latest commit SHA or "latest"
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 8000
+
+replicaCount: 2
